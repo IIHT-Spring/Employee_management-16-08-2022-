@@ -10,7 +10,7 @@ public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private Integer id;
 	
 	private String firstName;
 	
@@ -18,11 +18,11 @@ public class Employee {
 	
 	private String email;
 
-	public long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -50,7 +50,7 @@ public class Employee {
 		this.email = email;
 	}
 
-	public Employee(long id, String firstName, String lastName, String email) {
+	public Employee(Integer id, String firstName, String lastName, String email) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -61,8 +61,4 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	
-
-	
-
 }
