@@ -13,6 +13,6 @@ public interface IEmployeeService {
 	
 	Optional<Employee> getEmployee(Integer id);
 	
-	
+	public void deleteEmployee(Integer id);
 
 }

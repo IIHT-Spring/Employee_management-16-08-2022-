@@ -30,4 +30,12 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		return employeeRepository.findById(id);
 	}
 
+	@Override
+	public void deleteEmployee(Integer id) {
+			employeeRepository.deleteById(id);
+		
+	}
+	
+	
+
 }
