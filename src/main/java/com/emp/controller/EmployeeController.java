@@ -55,13 +55,14 @@ public class EmployeeController {
 			employeeService.deleteEmployee(id);
 		} catch (Exception e) {
 			e.printStackTrace();
-			responseEntity = new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			responseEntity = new ResponseEntity<>(H ttpStatus.NOT_FOUND);
 		}
 		return responseEntity;
 
 	}
+
 	@PutMapping("/update/{id}")
-	public ResponseEntity<Employee> updateEmployee(@PathVariable("id") Integer id, @RequestBody Employee employee ) {
+	public ResponseEntity<Employee> updateEmployee(@PathVariable("id") Integer id, @RequestBody Employee employee) {
 		return new ResponseEntity<Employee>(employeeService.updateEmployee(employee, id), HttpStatus.OK);
 	}
 }
